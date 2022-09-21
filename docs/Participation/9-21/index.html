@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation 9/19 Kole Davis</title>
+</head>
+<body>
+    <div>
+        <h1>A new day is calling. Will you answer?</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Mug_root_beer_logo.png" alt="certified mug moment">
+    </div>
+
+    <div>
+        <!-- the action tab inicates the URL where the form data should be sent -->
+        <form action="submission.html" id="data">
+            <p>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" value="">
+            </p>
+            <p>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" value="">
+            </p>
+            <p>
+                <label for="knowledge-check">You know what I mean, yea?</label>
+                <input type="checkbox" id="knowledge-check" name="knowledge-check">
+            </p>
+            <p>
+                <label for="rating">On a scale of 1-5, how free are you tonight? ;)</label>
+                <span><input type="radio" name="rating" id="str1" value="1"><label for="str5">1</label></span>
+                <span><input type="radio" name="rating" id="str2" value="2"><label for="str4">2</label></span>
+                <span><input type="radio" name="rating" id="str3" value="3"><label for="str3">3</label></span>
+                <span><input type="radio" name="rating" id="str4" value="4"><label for="str2">4</label></span>
+                <span><input type="radio" name="rating" id="str5" value="5"><label for="str1">5</label></span>
+            </p>
+            <p>
+                <label for="entertainment">Are you not entertained?</label>
+                <select name="entertainment" id="entertainment">
+                    <option value="absolutely">Absolutely?</option>
+                    <option value="without a doubt">Without a doubt!!</option>
+                    <option value="Screeches">* Screeches *</option>
+                    <option value="the gods">They are calling me...</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" id="formSubmission" value="SEND IT">
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
