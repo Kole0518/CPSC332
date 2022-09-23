@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+h1
+{
+    all: unset;
+    display: inline-block;
+    background-color: rgba(46, 46, 169, 0.638);
+    color: blanchedalmond;
+    font-size: 3em;
+    padding: .2em .3em;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 90%;
+    align-self: center;
+    border: 7px pink groove;
+    box-shadow: 0 80% 17px -6px rgba(black, .6);
+    transform: scale(1);
+    transition: transform ease-in-out 250ms;
+}
+
+h1:hover
+{
+    transform: scale(1.1);
+    background-color: rgba(87, 197, 160, 0.749);
+}
+
+h2
+{
+    all: unset;
+    display: inline-block;
+    background-color: rgba(212, 73, 73, 0.756);
+    color: rgba(255, 208, 0, 0.736);
+    font-size: 2em;
+    padding: .2em .3em;
+    text-align: center;
+    width: 50%;
+    align-self: center;
+    border: 5px rgba(31, 156, 213, 0.877) dotted;
+    box-shadow: 0 80% 17px -6px rgba(black, .6);
+    transform: scale(1);
+    transition: transform ease-in-out 250ms;
+}
+
+h2:hover
+{
+    transform: scale(0.6);
+    background-color: rgb(109, 60, 155);
+}
+
+h3
+{
+    animation: spin .2s linear infinite;
+    color:rgba(87, 197, 160, 0.749);
+    font-size: 3em;
+    margin-top: 3em;
+    background-color: brown;
+    border: 1px white solid;
+}
+
+@keyframes spin
+{
+    100% { transform: rotate(360deg); }
+}
