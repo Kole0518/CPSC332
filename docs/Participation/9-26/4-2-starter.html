@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        https://www.w3schools.com/cssref/css3_pr_background.asp
+        The background property is a shorthand property for:
+            background-color
+            background-image
+            background-position
+            background-size
+            background-repeat
+            background-origin
+            background-clip
+            background-attachment
+            It does not matter if one of the values above are missing, e.g. background:#ff0000 url(smiley.gif); is allowed.
+            example:
+            background: lightblue url("img_tree.gif") no-repeat fixed center;
+        */
+        *
+        {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            background-color: gainsboro;
+        }
+
+        h1
+        {
+            align-self: center;
+            padding: .5rem;
+            margin: .5rem;
+            background-image: linear-gradient(blue, purple);
+            color: ghostwhite;
+            border: .3rem double white;
+        }
+
+        img
+        {
+            align-self: center;
+            border-radius: 50%;
+        }
+
+        .description
+        {
+            padding: 1rem;
+            margin: 1rem;
+            border-top-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            background: linear-gradient(white, black);
+        }
+
+        .custom-green
+        {
+            padding: 1rem;
+            margin: 1rem;
+            background: -webkit-linear-gradient(red, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .some-text
+        {
+            align-self: center;
+            padding: 0.5rem;
+        }
+
+        p
+        {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Color Property</h1>
+    <!--float allows text to flow around the image-->
+    <img src="image.jpg" alt="image" width="45%">
+    <!--clear prevents text to flow around the image-->
+    <div class="description">
+        <p class="custom-green">
+            <!-- <img id="test2" src="cough.jpg" height="100"> -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+            at turpis
+            eu tellus pulvinar
+            cursus porta luctus
+            mi.
+            Nulla rutrum quis lacus ac faucibus. Phasellus pellentesque justo a nunc accumsan, ut euismod augue
+            consectetur.
+            Sed eu enim est. Curabitur quis volutpat sapien, eget viverra eros. Donec semper fermentum ligula et
+            efficitur.
+            Proin ipsum felis, volutpat ac elementum a, condimentum quis diam. In euismod enim erat, et vehicula sapien
+            interdum auctor. Duis viverra quam in commodo ultricies. Nunc pulvinar nibh ac elit ultrices, nec faucibus
+            turpis viverra. Ut aliquet augue nisi, eget maximus lorem feugiat id. Donec interdum, purus non semper
+            laoreet,
+            tellus felis rutrum mauris, ac semper orci nunc et felis. Suspendisse potenti. Ut non ipsum vitae nulla
+            varius
+            pulvinar nec et diam.
+        </p>    
+    </div>
+    
+    <div class="some-text">
+        <p id="second-paragraph">This is somee text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+        <p>This is some text</p>
+    </div>
+</body>
+
+</html>
