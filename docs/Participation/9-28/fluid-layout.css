@@ -1,0 +1,44 @@
+body {
+    background: black;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    
+ }
+ 
+ header {
+    background: cornflowerblue;
+    line-height: 60px;
+    width: 100%;
+ }
+ 
+ nav {
+    background: khaki;
+    line-height: 50px;
+    width: 20%;
+    float: left;
+ }
+ 
+ article {
+    background: darkseagreen;
+    line-height: 180px;   
+ }
+ 
+ aside {
+    background: goldenrod;
+    line-height: 50px;
+    width: 80%;
+    float: right;
+ }
+ 
+ section {
+    background: lightsteelblue;
+    line-height: 90px;
+    width: 20%;
+    float: left;
+ }
+ 
+ footer {
+    background: lemonchiffon;
+    line-height: 40px;
+ }
