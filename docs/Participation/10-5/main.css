@@ -1,0 +1,12 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ol
+{
+    margin: 2rem;
+    background-color: rgba(120, 190, 126, 0.705);
+}
