@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation</title>
+    <script>
+        window.onload = function()
+        {
+            printTwoThingsToTheConsole("shut up", 7);
+            var myInt = "42"; // not an int
+            anotherInt = 67777777777; // DONT DO THIS,
+            let anotherInt = 676777777; // DO THIS INSTEAD.
+            let arrayThingy = [56, 54, "sdnaiodnasidasdo", 65.6]; // Arrays in JS are arrays of objects
+
+            // function declarations
+            function printTwoThingsToTheConsole(message, someNumber)
+            {
+                console.log("The message is: " + message + " and here is a number: " + someNumber);
+                return 7;
+            }
+
+            for(let i = 0; i < arrayThingy.length; i++) // standard for loop
+            {
+                console.log(arrayThingy[i]);
+            }
+
+            for (const iterator of arrayThingy) // for each loop
+            {
+                console.log(iterator);
+            }
+
+            arrayThingy.forEach(function(item, i){
+                console.log(item + " " + i);
+            }); // for each method (loops through items in collection)
+
+            // sorting arrays in JS sucks. have to use .sort() in a specific way
+
+            // making JS objects
+            var myObjectLiteral = {
+                name: "defName",
+                number: 5,
+                anArray: [12, 12, 12, 12],
+
+                // obj methods
+                foo: function()
+                {
+                    console.log("help me.")
+                },
+
+                // getters and setters
+                get numPlus()
+                {
+                    return this.someNumber + 1;
+                },
+
+                set nameSetter(name)
+                {
+                    this.name = name;
+                }
+            };
+            myObjectLiteral.name = "AHAHAHAHAHAHAHAHAHAHAHA";
+            console.log(myObjectLiteral.name);
+            myObjectLiteral.foo();
+            console.log(myObjectLiteral.numPlus);
+            console.log(myObjectLiteral.nameSetter = "Forgetmenot");
+
+
+            let dateTime = new Date();
+            console.log(dateTime);
+        }
+
+        var currentDate = 
+        {
+            dateTime: null
+        }
+
+        document.getElementById("update-date").addEventListener("click", pizzaTime);
+
+        function pizzaTime()
+        {
+            console.log("haha.")
+        };
+
+    </script>
+</head>
+<body>
+    <h1>yaaay.</h1>
+    <div>
+        <p>
+            <span id="date-text">SOS</span>
+        </p>
+        <p>
+            <button id="update-date">clikck meeeeee</button>
+        </p>
+    </div>
+    <a href="../../index.html">Back to main page...</a>
+</body>
+</html>
