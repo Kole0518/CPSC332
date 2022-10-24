@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10/21 Participation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="form-container">
+
+        <form action="submission.html" method="POST" id="form-submission">
+            <fieldset id="data">
+                <legend>CPSC 332 10/21 Participation</legend>
+                <p>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <button type="button" onclick="saveFirstName()">Save Data</button>
+                </p>
+
+                <p>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname">
+                    <button type="button" onclick="saveLastName()">Save Data</button>
+                </p>
+
+                <p>
+                    <label for="fcolor">Favorite Color:</label>
+                    <input type="text" id="fcolor" name="fcolor">
+                    <button type="button" onclick="saveColor()">Save Data</button>
+                </p>
+                
+                <p>
+                    <label for="clookalike">Celebrity Look-alike:</label>
+                    <input type="text" id="clookalike" name="clookalike">
+                    <button type="button" onclick="saveCelebrity()">Save Data</button>
+                </p>
+                <p>
+                    <input type="reset" value="Reset Response" onclick="resetForm()">
+                    <input type="submit" value="Submit Response" onclick="submitWatch()">
+                </p>
+            </fieldset>
+        </form>
+        <p id="error-display">
+
+        </p>
+    </div>
+</body>
+</html>

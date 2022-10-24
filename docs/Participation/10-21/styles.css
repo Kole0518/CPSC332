@@ -1,0 +1,73 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+body
+{
+    background-color: white;
+}
+
+#form-container
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: fit-content;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgba(0,212,255,1) 73%);
+    border-radius: 1rem;
+}
+
+#form-container form
+{
+    margin-top: 0.8rem;
+    align-content: center;
+    background: rgb(182,182,182);
+    background: radial-gradient(circle, rgba(182,182,182,1) 0%, rgba(121,121,121,1) 20%, rgba(0,0,0,1) 73%);
+    color: white;
+    outline: none;
+    padding: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+form p
+{
+    padding: 0.4rem;
+}
+
+fieldset
+{
+    outline: none;
+    border: none;
+}
+
+input[type=text]
+{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: ghostwhite;
+    color: black;
+}
+
+form legend
+{
+    border: 5px double rgba(0,212,255,1);
+    padding: 0.1rem;
+}
+
+#error-display
+{
+    background-color: gray;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+}
