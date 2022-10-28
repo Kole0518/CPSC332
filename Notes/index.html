@@ -1,77 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruh</title>
-    <style>
-        h2
-        {
-            font-style: italic;
-        }
-        .outer-container
-        {
-            width: 600px;
-            height: 280px;
-            border: 2px solid blue;
-            padding: 5px;
-            background-color: #F0F0F0;
-        }
+   <head>
+   	<title>Exceptional Quotes (jQuery)</title>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   	<script src="quote.js"></script>
+   	<style>
+   		body {
+   			font-family: Arial, Helvetica, sans-serif;
+   		}
+   		#quotes {
+   			background-color: #F1EAFF;
+   			padding-top: 10px;
+   			padding-bottom: 10px;
+   		}
+   	</style>
+   </head>
+	<body>
+		<h1>Exceptional Quotes</h1>
 
-        .outer-container h2
-        {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16pt;
-            color: blue;
-            font-style: italic;
-        }
-
-        .yellow
-        {
-            background-color: yellow;
-            float: left;
-            width: 200px;
-            padding: 10px;
-            margin: 0 10px 0 0;
-        }
-
-        .orange
-        {
-            background-color: orange;
-            position: absolute;
-            left: 110px;
-            top: 200px;
-            width: 200px;
-            padding: 10px;
-        }
-
-        .red
-        {
-            background-color: rgb(255, 80, 0);
-            color: white;
-            float: right;
-            width: 200px;
-            padding: 10px;
-            margin: 20px 40px 0 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="outer-container">
-        <h2>Yesterday</h2>
-        <div class="yellow">
-            Yesterday, All those backups seemed a waste of pay. Now my database has gone away. Oh I believe in yesterday.
-        </div>
-        <div>
-            Suddenly, There's not half the files there used to be, And there's a milestone hanging over me. The system crashed so suddenly. I pushed something wrong, What it was I could not say.
-        </div>
-        <div class="orange">
-            Now all my data's gone and I long for yesterday-ay-ay-ay.
-        </div>
-        <div class="red">
-            Yesterday, The need for back-ups seemed so far away. I knew my data was all here to stay, Now I believe in yesterday.
-        </div>
-    </div>
-</body>
+		<p>
+			<label for="topicSelection">Select a topic:</label>
+			<select id="topicSelection">
+            <option>Choose one</option>
+				<option>love</option>
+				<option>motivational</option>
+				<option>wisdom</option>
+				<option>humor</option>
+			</select>
+		</p>
+		<p>
+			<label for="countSelection">How many quotes?</label>
+			<select id="countSelection">
+				<option>1</option>
+				<option>2</option>
+				<option selected>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+		</p>
+		<p>
+		   <button id="fetchQuotesBtn">Fetch Quotes</button>
+		</p>
+		<div id="quotes">
+		</div>
+	</body>
 </html>
